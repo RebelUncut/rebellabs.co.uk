@@ -2,8 +2,11 @@
 @import "neat/neat";
 @import "base/base";
 
-$purple: #543968;
-$pink: #E91E63;
+$primary: #00b4a0; // teal
+$secondary: #543968; // purple
+
+$purple: $primary;
+$pink: $secondary;
 
 // Base 
 
@@ -48,6 +51,7 @@ $pink: #E91E63;
 
 	header {
 		padding: 2em 0;
+		margin-bottom: 3rem;
 		.flex {
 			display: flex;
 			flex-direction: row;
@@ -80,7 +84,7 @@ $pink: #E91E63;
 			height: 4em;
 		}
 		body.home & {
-			padding: 20vh 0;
+			padding: 10vh 0;
 			img {
 				height: 20vh;
 			}
