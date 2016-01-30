@@ -601,6 +601,39 @@ h1 {
     color: #543968;
     text-decoration: underline; }
 
+#projects ul {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  display: block; }
+  #projects ul li {
+    padding: 2em; }
+    #projects ul li img {
+      width: 20%; }
+    #projects ul li p {
+      font-size: 1.5em;
+      color: white;
+      font-weight: normal;
+      font-size: 1.5rem;
+      margin-bottom: 0.75em;
+      margin-top: 0.5em; }
+      #projects ul li p:hover {
+        color: white; }
+    #projects ul li.makers {
+      background: #E91E63; }
+      #projects ul li.makers .learn-more {
+        background: white;
+        color: #E91E63;
+        padding: 0.5em 1em;
+        display: inline-block;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
+        #projects ul li.makers .learn-more:hover {
+          background: #e6e6e6;
+          -webkit-transition: all 0.15s ease-out 0s;
+          -moz-transition: all 0.15s ease-out 0s;
+          transition: all 0.15s ease-out 0s; }
+
 a.email-us {
   background: #543968;
   color: white;
