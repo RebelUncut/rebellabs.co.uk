@@ -1,28 +1,34 @@
 extends layout
 
 block vars
-	- var pageTitle = "Home"
-	- var pageClass = "home"
+    - var pageTitle = "Home"
+    - var pageClass = "home"
 
 block content
 
-	.wrapper.outer
+    .wrapper.outer
 
+        section#copy
 
-
-		section#copy
-
-			:marked
-				# What is Rebel Labs?
+            :marked
+                # What is Rebel Labs?
 				
-				We are a social enterprise powering fresh and exciting opportunities for people of all ages to engage in meaningful learning experiences, improving their social support networks, skills and wellbeing.
+                We are a social enterprise powering fresh and exciting opportunities for people of all ages to engage in meaningful learning experiences, improving their social support networks, skills and wellbeing.
 				
-				Rebel Labs creates communities around positive action, enabling people to work together to inspire change and build a better future. We do this through:
+                Rebel Labs creates communities around positive action, enabling people to work together to inspire change and build a better future. We do this through:
 				
-				* workshops
-				* training
-				* hackathons & events 
-				* projects
-				* collaboration
-			
-				Our first project is Rebel Makers, a network of peer-to-peer making clubs for everyone interested in programming, electornics, and digital production - regardless of age or ability. 
+                * workshops
+                * training
+                * hackathons & events
+                * projects
+                * collaboration
+
+        section#projects
+
+            h1 Our Projects
+
+            ul
+                a(href="#"): li.makers
+                    img(src="img/projects/makers.svg", alt="Rebel Makers Logo")
+                    p Rebel Makers is a network of peer-to-peer making clubs for everyone interested in programming, electornics, and digital production - regardless of age or ability.
+                    .learn-more rebelmakers.co.uk

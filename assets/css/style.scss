@@ -28,9 +28,9 @@ $pink: $secondary;
 		}
 	}
 
-	@mixin button($color: $purple) {
+	@mixin button($color: $purple, $text: white) {
 		background: $color;
-		color: white;
+		color: $text;
 		padding: 0.5em 1em;
 		display: inline-block;
 		@include transition;
@@ -457,6 +457,37 @@ h1 {
 			text-decoration: underline;
 		}
 	}
+}
+
+#projects {
+    ul {
+        margin-top: 1em;
+        margin-bottom: 3em;
+        display: block;
+        li {
+            padding: 2em;
+            img {
+                width: 20%;
+            }
+            p {
+                font-size: 1.5em;
+                color: white;
+                font-weight: normal;
+                font-size: 1.5rem;
+                margin-bottom: 0.75em;
+                margin-top: 0.5em;
+                &:hover {
+                    color: white;
+                }
+            }
+            &.makers {
+                background: #E91E63;
+                .learn-more {
+                    @include button(white, #E91E63)
+                }
+            }
+        }
+    }
 }
 
 // Edge
