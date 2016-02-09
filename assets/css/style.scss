@@ -26,6 +26,11 @@ $pink: $secondary;
 		&.outer {
 			padding: 0 $column + $gutter;
 		}
+		@media screen and (max-width: 800px) {
+			&.outer {
+				padding: 0 $gutter;
+			}
+		}
 	}
 
 	@mixin button($color: $purple, $text: white) {
@@ -52,13 +57,20 @@ $pink: $secondary;
 	header {
 		padding: 2em 0;
 		margin-bottom: 3rem;
+		background: 
+		linear-gradient(
+			to bottom,
+			rgba($purple, 0.75),
+			rgba($purple, 0.75)),
+			url(/img/header.jpg) center scroll;
+		background-size: cover;
 		.flex {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 		}
 		.copy {
-			padding-bottom: 1em;
+			padding-bottom: 0.5em;
 		}
 		h1,
 		h2 {
@@ -82,6 +94,7 @@ $pink: $secondary;
 		}
 		img {
 			height: 4em;
+			display: block;
 		}
 		body.home & {
 			padding: 10vh 0;
@@ -95,6 +108,27 @@ $pink: $secondary;
 			}
 			h2 {
 				font-size: 1.5rem;
+			}
+		}
+		@media screen and (max-width: 800px) {
+			padding: 3rem !important;
+			margin-bottom: 2rem !important;
+			.flex {
+				flex-direction: column;
+			}
+			h1 {
+				text-align: center;
+			}
+			img {
+				height: 5em !important;
+			}
+			.copy {
+				padding-bottom: 0;
+				padding-top: 1em;
+				h1 {
+					margin-left: 0 !important;
+					font-size: 1.5rem !important;
+				}
 			}
 		}
 	}
@@ -208,8 +242,8 @@ section#community {
 			rgba($purple, 1),
 			transparent),
 			url(/img/footer.jpg) center scroll;
-		background-size: cover;
-		padding: 4em 0 8em;
+	background-size: cover;
+	padding: 4em 0 8em;
 	* {
 		color: white;
 	}
@@ -281,6 +315,18 @@ footer {
 			}
 		}
 	}
+	@media screen and (max-width: 800px) {
+		.flex {
+			flex-direction: column;
+			align-items: center;
+		}
+		img {
+			margin-bottom: 0.5em;
+		}
+		ul li:first-child {
+			margin-left: 0;
+		}
+	}
 }
 
 body {
@@ -325,6 +371,11 @@ h1 {
 		li {
 			list-style-type: disc;
 			margin-left: 20px;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		h1 {
+			font-size: 1.5rem !important;
 		}
 	}
 }
@@ -466,9 +517,13 @@ h1 {
         display: block;
         li {
             padding: 2em;
+			margin-bottom: 2em;
             img {
                 width: 20%;
             }
+			h1 {
+				color: white;
+			}
             p {
                 font-size: 1.5em;
                 color: white;
@@ -486,8 +541,34 @@ h1 {
                     @include button(white, #E91E63)
                 }
             }
+			&.ukgovhack {
+                background: #3F579C;
+                .learn-more {
+                    @include button(white, #3F579C)
+                }
+            }
         }
+		a:last-child li {
+			margin-bottom: 0;
+		}
     }
+	@media screen and (max-width: 800px) {
+		h1 {
+			font-size: 1.5rem !important;
+		}
+		ul li {
+			img {
+				
+			}
+			h1 {
+				
+			}
+			p {
+				font-size: 1rem !important;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
 }
 
 // Edge

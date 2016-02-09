@@ -8,10 +8,6 @@ $("ul.nav").scrollToFixed({
 	}
 }); 
 
-$("header").parallax({
-	imageSrc: "/img/header.jpg"
-});
-
 $("#clubs .match").matchHeight();
 
 var eventbriteToken = "4V67L4JUEJAOGLKE2VBT";
