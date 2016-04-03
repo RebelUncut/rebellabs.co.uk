@@ -711,4 +711,27 @@ a.email-us {
     -moz-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
 
+#newsletter {
+  background: #00b4a0;
+  padding-top: 3rem;
+  padding-bottom: 2em; }
+  #newsletter * {
+    color: white; }
+  #newsletter input[type="text"],
+  #newsletter input[type="email"] {
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    color: #333333; }
+  #newsletter input[type="submit"] {
+    background: white;
+    color: #00b4a0;
+    margin-top: 0.5em;
+    display: inline-block;
+    border-radius: 0; }
+    #newsletter input[type="submit"]:hover, #newsletter input[type="submit"]:active {
+      background: white;
+      color: #00b4a0; }
+
  /*# sourceMappingURL=style.css.map */
