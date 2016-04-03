@@ -8,7 +8,7 @@ $secondary: #543968; // purple
 $purple: $primary;
 $pink: $secondary;
 
-// Base 
+// Base
 
 	* {
 		margin: 0;
@@ -57,7 +57,7 @@ $pink: $secondary;
 	header {
 		padding: 2em 0;
 		margin-bottom: 3rem;
-		background: 
+		background:
 		linear-gradient(
 			to bottom,
 			rgba($purple, 0.75),
@@ -101,7 +101,7 @@ $pink: $secondary;
 			img {
 				height: 20vh;
 			}
-			h1, 
+			h1,
 			h2 {
 				font-size: 2rem;
 				margin-left: 3rem;
@@ -197,7 +197,7 @@ section#ethos {
 	@extend %icon-list;
 	margin-top: 2em;
 }
- 
+
 section#features {
 	h1 {
 		@include span-columns(12);
@@ -236,7 +236,7 @@ section#features {
 }
 
 section#community {
-	background: 
+	background:
 		linear-gradient(
 			to top,
 			rgba($purple, 1),
@@ -511,57 +511,57 @@ h1 {
 }
 
 #projects {
-    ul {
-        margin-top: 1em;
-        margin-bottom: 3em;
-        display: block;
-        li {
-            padding: 2em;
+	ul {
+		margin-top: 1em;
+		margin-bottom: 3em;
+		display: block;
+		li {
+			padding: 2em;
 			margin-bottom: 2em;
-            img {
-                width: 20%;
-            }
+			img {
+				width: 20%;
+			}
 			h1 {
 				color: white;
 			}
-            p {
-                font-size: 1.5em;
-                color: white;
-                font-weight: normal;
-                font-size: 1.5rem;
-                margin-bottom: 0.75em;
-                margin-top: 0.5em;
-                &:hover {
-                    color: white;
-                }
-            }
-            &.makers {
-                background: #E91E63;
-                .learn-more {
-                    @include button(white, #E91E63)
-                }
-            }
+			p {
+				font-size: 1.5em;
+				color: white;
+				font-weight: normal;
+				font-size: 1.5rem;
+				margin-bottom: 0.75em;
+				margin-top: 0.5em;
+				&:hover {
+					color: white;
+				}
+			}
+			&.makers {
+				background: #E91E63;
+				.learn-more {
+					@include button(white, #E91E63)
+				}
+			}
 			&.ukgovhack {
-                background: #3F579C;
-                .learn-more {
-                    @include button(white, #3F579C)
-                }
-            }
-        }
+				background: #3F579C;
+				.learn-more {
+					@include button(white, #3F579C)
+				}
+			}
+		}
 		a:last-child li {
 			margin-bottom: 0;
 		}
-    }
+	}
 	@media screen and (max-width: 800px) {
 		h1 {
 			font-size: 1.5rem !important;
 		}
 		ul li {
 			img {
-				
+
 			}
 			h1 {
-				
+
 			}
 			p {
 				font-size: 1rem !important;
@@ -578,4 +578,33 @@ a.email-us {
 	font-size: 1.25em;
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+
+#newsletter {
+	background: $primary;
+	padding-top: 3rem;
+	padding-bottom: 2em;
+	* {
+		color: white;
+	}
+	input[type="text"],
+	input[type="email"] {
+		box-shadow: none;
+		outline: none;
+		border:none;
+		border-radius: 0;
+		color: #333333;
+	}
+	input[type="submit"] {
+		background: white;
+		color: $primary;
+		margin-top: 0.5em;
+		display: inline-block;
+		border-radius: 0;
+		&:hover,
+		&:active {
+			background: white;
+			color: $primary;
+		}
+	}
 }
