@@ -575,17 +575,6 @@ nav {
       width: 100%; }
       .contact ul.networks:last-child {
         margin-right: 0; }
-      .contact ul.networks li {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%; }
-        .contact ul.networks li:last-child {
-          margin-right: 0; }
-        .contact ul.networks li:nth-child(2n) {
-          margin-right: 0; }
-        .contact ul.networks li:nth-child(2n+1) {
-          clear: left; }
     .contact .newsletter {
       float: left;
       display: block;
