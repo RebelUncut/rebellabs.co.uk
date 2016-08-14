@@ -181,6 +181,9 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+* {
+  -webkit-appearance: none; }
+
 body {
   margin: 0;
   padding: 0;
