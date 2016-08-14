@@ -46,10 +46,6 @@
 		}
 		ul.networks {
 			@include span-columns(12);
-			li {
-				@include span-columns(6 of 12);
-				@include omega(2n);
-			}
 		}
 		.newsletter {
 			@include span-columns(12);
