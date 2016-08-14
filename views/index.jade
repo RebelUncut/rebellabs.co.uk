@@ -1,50 +1,33 @@
-extends layout
+doctype html
+html
 
-block vars
-    - var pageTitle = "Home"
-    - var pageClass = "home"
+    head
+        meta(charset='utf8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+        meta(name='description', content='Creating positive opportunities for all.')
+        meta(name='author', content= "Rebel Labs")
+        link(rel="icon", type="image/x-icon", href="../img/favicon.ico")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title Rebel Labs
+        link(rel="stylesheet", href="/fonts/akula.css")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+        != css()
+        script(src="https://use.typekit.net/qhl2wtk.js")
+        script.
+            try{Typekit.load({ async: true });}catch(e){}
 
-block content
+    body
+        
+        include _nav.jade
+        .page
+            include _hero.jade
+            include _manifesto.jade
+            include _services.jade
+            include _projects.jade
+            include _team.jade
+            include _contact.jade
 
-    .wrapper.outer
+        include _footer.jade
 
-        section#copy
+        != js()
 
-            :marked
-                # What is Rebel Labs?
-
-                We are a social enterprise powering fresh and exciting opportunities for people of all ages to engage in meaningful learning experiences, improving their social support networks, skills and wellbeing.
-
-                Rebel Labs creates communities around positive action, enabling people to work together to inspire change and build a better future. We do this through:
-
-                * workshops
-                * training
-                * hackathons & events
-                * projects
-                * collaboration
-
-        section#projects
-
-            h1 Our Projects
-
-            ul
-                a(href="http://rebelmakers.co.uk"): li.makers
-                    img(src="img/projects/makers.svg", alt="Rebel Makers Logo")
-                    p Rebel Makers is a network of peer-to-peer making clubs for everyone interested in programming, electronics, and digital production - regardless of age or ability.
-                    .learn-more rebelmakers.co.uk
-                a(href="http://ukgovhack.com"): li.ukgovhack
-                    h1 UKGovHack
-                    p UKGovHack is a two day event bringing together technologists and public sector enthusiasts to make connections, extend learning and share experience to strengthen the UK civic tech community.
-                    .learn-more ukgovhack.com
-
-    section#newsletter: .wrapper.outer
-        h1 Register for updates
-        form#mc-embedded-subscribe-form.validate(action='//rebeluncut.us12.list-manage.com/subscribe/post?u=e6f5b0f5a25d37d333f71a382&id=f92e514316', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
-            .input-group
-                label(for="mce-FULLNAME") Full Name
-                input(type="text", value="", name="FULLNAME", class="", id="mce-FULLNAME", placeholder="Full name")
-            .input-group
-                label(for="mce-EMAIL") Email Address
-                input(type="email", value="", name="EMAIL", class="", id="mce-EMAIL", placeholder="Email Address")
-            div(style='position: absolute; left: -5000px;', aria-hidden='true'): input(type='text', name='b_e6f5b0f5a25d37d333f71a382_f92e514316', tabindex='-1', value='')
-            input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')

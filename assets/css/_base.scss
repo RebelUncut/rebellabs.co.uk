@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "futura-pt", sans-serif;
+}
+
+.wrapper {
+	@include outer-container;
+}
+
+.page {
+	padding-top: 80px;
+}
+
+h1.section-header {
+	@include span-columns(12 of 12);
+	font-size: 2em;
+	font-family: $font-special;
+	text-align: center;
+}
+
+@media screen and (max-width: $mobile) {
+	.page {
+		padding-top: 0;
+	}
+	h1.section-header {
+		font-size: 1.5em;
+	}
+}

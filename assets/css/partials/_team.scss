@@ -1,0 +1,7 @@
+.team {
+	@extend .services;
+	background: $color-primary;
+	img {
+		border-radius: 5px;
+	}
+}

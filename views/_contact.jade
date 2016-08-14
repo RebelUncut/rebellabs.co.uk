@@ -1,0 +1,34 @@
+.contact#contact
+    .wrapper
+        h1.section-header Keep in touch
+        .half
+            ul.networks
+                li #[i.fa.fa-fw.fa-envelope] #[a(href="mailto:hello@rebellabs.co.uk") hello@rebellabs.co.uk]
+                li #[i.fa.fa-fw.fa-facebook] #[a(href="http://facebook.com/rebellabs") @rebellabs]
+                li #[i.fa.fa-fw.fa-twitter] #[a(href="http://twitter.com/_rebellabs") @_rebellabs]
+                li #[i.fa.fa-fw.fa-phone] #[a(href="tel:01212364588") 0121 236 4588]
+            form#mc-embedded-subscribe-form.newsletter.validate(action='//rebeluncut.us12.list-manage.com/subscribe/post?u=e6f5b0f5a25d37d333f71a382&id=f92e514316', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                h2 Sign up for our newsletter
+                .input-group
+                    label(for="mce-FULLNAME") Full Name
+                    input(type="text", value="", name="FULLNAME", class="", id="mce-FULLNAME", placeholder="Full name")
+                .input-group
+                    label(for="mce-EMAIL") Email Address
+                    input(type="email", value="", name="EMAIL", class="", id="mce-EMAIL", placeholder="Email Address")
+                div(style='position: absolute; left: -5000px;', aria-hidden='true'): input(type='text', name='b_e6f5b0f5a25d37d333f71a382_f92e514316', tabindex='-1', value='')
+                input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
+        .half
+            h2 Message us
+            form(action="https://formspree.io/hello@rebellabs.co.uk")
+                .input-group
+                    label(for="fullname") Full Name
+                    input(type="text", value="", name="fullname", class="", id="fullname", placeholder="Full name")
+                .input-group
+                    label(for="email") Email Address
+                    input(type="email", value="", name="email", class="", id="email", placeholder="Email Address")
+                .input-group
+                    label(for="message") Message
+                    textarea(name="message", id="message", placeholder="Message", rows="5")
+                input(type="hidden", name="_subject", value="Rebel Labs Website Submission")
+                input(type="text", name="_gotcha", style="display:none")
+                input.button(type='submit', value='Send', name='send')

@@ -1,0 +1,59 @@
+.contact {
+	@include span-columns(12 of 12);
+	padding: 4em 2em;
+	h1.section-header {
+		margin-bottom: 2em;
+	}
+	.half {
+		@include span-columns(6 of 12);
+	}
+	.networks a {
+		color: $color-primary;
+	}
+	.newsletter {
+		background: #313b4b;
+		padding: 1em;
+		border-radius: 5px;
+		margin-top: 2em;
+		color: white;
+	}
+	h2 {
+		font-family: $font-special;
+		font-size: 1.5em;
+	}
+	input[type="email"]:focus,
+	input[type="text"]:focus,
+	textarea:focus {
+		border-color: $color-primary;
+		box-shadow: none;
+	}
+	input.button {
+		background: $color-primary;
+		&:hover {
+			background: darken($color-primary, 10%);
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.contact {
+		padding: 2em;
+		h1.section-header {
+			margin-bottom: 1em;
+		}
+		.half {
+			@include span-columns(12 of 12);
+		}
+		ul.networks {
+			@include span-columns(12);
+			li {
+				@include span-columns(6 of 12);
+				@include omega(2n);
+			}
+		}
+		.newsletter {
+			@include span-columns(12);
+			margin-bottom: 2em;
+		}
+	}
+}

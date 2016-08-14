@@ -1,0 +1,50 @@
+.projects {
+	@include span-columns(12 of 12);
+	padding: 4em 2em;
+	h1.section-header {
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 2em;
+	}
+	ul {
+		@include span-columns(12 of 12);
+	}
+	li {
+		@include span-columns(12 of 12);
+		background: $color-primary;
+		margin-bottom: 2em;
+		padding: 2em;
+		border-radius: 5px;
+		color: white;
+		h2 {
+			font-size: 2em;
+			font-family: $font-special;
+		}
+		h2, p, span {
+			@include span-columns(8 of 12);
+		}
+		a {
+			color: white;
+			display: inline-block;
+			padding: 0.5em 1em;
+			border: 2px solid white;
+			border-radius: 5px;
+			margin-top: 1em;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.projects {
+		padding: 2em;
+		h1.section-header {
+			margin-bottom: 1em;
+		}
+		ul li {
+			padding: 1em;
+			h2, p, span {
+				@include span-columns(12 of 12);
+			}
+		}
+	}
+}

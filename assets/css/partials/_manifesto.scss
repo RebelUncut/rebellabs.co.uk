@@ -1,0 +1,57 @@
+.manifesto {
+	@include span-columns(12 of 12);
+	background: white;
+	padding: 4em 2em 2em;
+	h1.section-header {
+		margin-top: 0;
+		margin-bottom: 2em;
+	}
+	ul {
+		@include span-columns(12 of 12);
+		margin-top: 0;
+		margin-bottom: 1em;
+		.half {
+			@include span-columns(6 of 12);
+		}
+		li {
+			@include span-columns(6 of 6);
+			span.number {
+				@include span-columns(0.5 of 6);
+				font-size: 1em;
+				font-family: "Bangers";
+				margin-right: 0.5em;
+				color: $color-primary;
+				display: flex;
+				margin-bottom: 1rem;
+				font-size: 1.25em;
+				text-align: center;
+				margin-top: -2px;
+			}
+			span.item {
+				@include span-columns(5.5 of 6);
+				margin-bottom: 1rem;
+				font-style: italic;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.manifesto {
+		padding: 2em;
+		h1.section-header {
+			margin-bottom: 1em;
+		}
+		ul {
+			margin-bottom: 0;
+			.half {
+				@include span-columns(12 of 12);
+			}
+			.half:last-child li:last-child span.number,
+			.half:last-child li:last-child span.item {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
