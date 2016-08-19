@@ -521,6 +521,18 @@ nav {
   .team img {
     border-radius: 5px; }
 
+.clients img {
+  width: 80%;
+  display: block;
+  margin: 4rem auto; }
+
+@media screen and (max-width: 768px) {
+  .clients {
+    padding: 0 2em; }
+    .clients img {
+      width: 100%;
+      margin-bottom: 2rem; } }
+
 .contact {
   float: left;
   display: block;
