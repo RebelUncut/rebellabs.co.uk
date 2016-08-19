@@ -1,0 +1,17 @@
+.clients {
+	img {
+		width: 80%;
+		display: block;
+		margin: 4rem auto;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.clients {
+		padding: 0 2em;
+		img {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+	}
+}

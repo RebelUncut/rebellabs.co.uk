@@ -16,7 +16,7 @@
 }
 
 .hero {
-	background: linear-gradient(90deg, darken(#00B5A1, 10%), #00B5A1, lighten(#00B5A1, 10%));
+	background: linear-gradient(90deg, darken($color-primary, 10%), $color-primary, lighten($color-primary, 10%));
 	background-size: 600% 600%;
 
 	-webkit-animation: heroGradient 20s ease infinite;
