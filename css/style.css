@@ -224,7 +224,8 @@ nav {
   padding: 1em 2em;
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.75);
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   nav a.brand img {
     height: 3rem;
     float: left; }
